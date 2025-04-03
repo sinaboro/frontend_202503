@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .doll input[type="radio"] {
+        display: none;  /* 라디오 버튼 숨김 처리 */
+    }
+    
+    .doll img {
+        cursor: pointer; /* 마우스를 이미지 위로 올렸을 때 클릭 가능하게 보이도록 처리 */
+        border: 3px solid transparent; /* 테두리 기본 투명하게 */
+        border-radius: 5px; /* 테두리 둥글게 */
+    }
+    
+    /* 선택된 이미지에 스타일 주기 */
+    .doll input[type="radio"]:checked + img {
+        border-color: #4CAF50; /* 선택된 이미지의 테두리 색상 강조 */
+    }
+</style>
+</head>
+<body>
+    <form method="get" action="yourServletPath">
+        <div id="container">
+            <label class="doll">
+                <input type="radio" name="selectedValue" value="01">
+                <img src="img/1.jpg" alt="doll1">
+            </label>
+    
+            <label class="doll">
+                <input type="radio" name="selectedValue" value="02">
+                <img src="img/2.jpg" alt="doll2">
+            </label>
+    
+            <label class="doll">
+                <input type="radio" name="selectedValue" value="03">
+                <img src="img/3.jpg" alt="doll3">
+            </label>
+    
+            <label class="doll">
+                <input type="radio" name="selectedValue" value="04">
+                <img src="img/4.jpg" alt="doll4">
+            </label>
+    
+            <label class="doll">
+                <input type="radio" name="selectedValue" value="05">
+                <img src="img/5.jpg" alt="doll5">
+            </label>
+    
+            <label class="doll">
+                <input type="radio" name="selectedValue" value="06">
+                <img src="img/6.jpg" alt="doll6">
+            </label>
+    
+            <label class="doll">
+                <input type="radio" name="selectedValue" value="07">
+                <img src="img/7.jpg" alt="doll7">
+            </label>
+    
+            <label class="doll">
+                <input type="radio" name="selectedValue" value="08">
+                <img src="img/8.jpg" alt="doll8">
+            </label>
+    
+            <label class="doll">
+                <input type="radio" name="selectedValue" value="09">
+                <img src="img/9.jpg" alt="doll9">
+            </label>
+    
+            <label class="doll">
+                <input type="radio" name="selectedValue" value="10">
+                <img src="img/10.jpg" alt="doll10">
+            </label>
+        </div>
+    
+        <input type="submit" value="선택완료">
+    </form>
+    
+</body>
+</html>
