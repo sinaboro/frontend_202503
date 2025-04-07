@@ -30,11 +30,11 @@ gugu2();
 console.log("------------------------");
 
 //함수 표현식 - 화살표함수(람다함수)
-const gugu3 =  () => {
+const gugu3 =  () => {  // java : ->
     console.log("화살표함수 : ");
     for(let i=1; i<=9; i++){
         console.log(`3*${i} = ${3*i}`);
     }
 };
-gugu3();
+
 console.log("------------------------");

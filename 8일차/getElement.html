@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title">title</h1>
+    <p class="text">text-1</p>
+    <p class="text">text-2</p>
+
+    <script>
+        const el = document.getElementById("title");
+        console.log(el);
+        console.log(el.textContent);
+        el.innerHTML="sample";
+        console.log(el.textContent);
+        console.log("-------------------------------");
+
+        const classEl = document.getElementsByClassName("text");
+        console.log(classEl);
+        console.log(classEl[1].textContent);
+
+        const tagEls = document.getElementsByTagName("p");
+        console.log(tagEls);
+        console.log(tagEls[0].textContent);
+    </script>
+</body>
+</html>

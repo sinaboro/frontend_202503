@@ -16,7 +16,8 @@ const gugu = function gugudan2(num){
         console.log(`${num}*${i} = ${num*i}`);
     }
 };
-gugu(7);
+gugu(10);
+
 console.log("------------------------");
 
 //함수 표현식 - 익명함수
