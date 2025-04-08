@@ -66,6 +66,6 @@ function three(count){
 // repeatAll(5, three);
 repeatAll(5, count => console.log(count*3));
 
-repeatAll(5, function three(count){
+repeatAll(5,  function three(count){
     console.log(count*5)
 });
